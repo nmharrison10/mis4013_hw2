@@ -7,15 +7,16 @@ include "view-header.php";
 <h1>Post Results</h1>
 
 <?php
-if (isset($_POST["my_name"])) {
-  ?>
-  <p>The value sent is: <?php echo $_POST["my_name"]</p>
-}
-else {
-  ?>
-<p>Nothing posted to the page.</p>
-    <?php
-}
-
+echo getDisplay;
 include "view-footer.php";
+
+  function getDisplay() {
+    if (isset($_POST["my_name"])) {
+  return "The value sent is:" : $_POST["my_name"];
+  }
+else {
+  return "Nothing posted to this page.";
+}
+  }
+  
 ?>
