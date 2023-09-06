@@ -9,7 +9,7 @@ include "view-header.php";
 <?php
 if (isset($_GET["my_name"])) {
   ?>
-  <p>The value sent is: <?php echo $_GET["my_name"]</p>
+  <p>The value sent is: <?php echo($_GET["my_name"])</p>
 }
 else {
   ?>
