@@ -3,10 +3,6 @@ $pageTitle = "Post Results";
 include "view-header.php";
 ?>
 <h1>Post Results</h1>
-<?php
-echo getDisplay;
-include "view-footer.php";
-
 if (isset($_POST['my_name'])) {
   ?>
   <p>The value sent is: </p>
